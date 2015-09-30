@@ -1,0 +1,18 @@
+html 
+{
+    min-height:100%;
+}
+body 
+{
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+}
+body,td,th 
+{
+    font-size: large;
+    margin: 3% 5% 3% 5%;
+}
+.center
+{
+	text-align: center;
+}
