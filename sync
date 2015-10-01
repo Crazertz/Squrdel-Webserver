@@ -1,2 +1,12 @@
-git pull
-cp -Rv html/* ../
+HOME=/var/www/html/Squrdel-Webserver
+
+cd $HOME
+while (true)
+do
+	git fetch > $HOME/build_log.txt 2>&1
+	if [ -s build_log.txt ]
+	then
+		cp -Rv html/* ../
+	fi
+	sleep 2
+done
